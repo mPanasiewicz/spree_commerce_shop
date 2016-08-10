@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -51,5 +53,8 @@ gem 'spree_gateway', '~> 3.1.0'
 gem 'spree_auth_devise', '~> 3.1.0'
 gem 'spree_i18n', git: 'git://github.com/spree/spree_i18n.git', branch: '3-1-stable'
 
+#Heroku
+gem 'rails_12factor', group: :production
+
 # Custom extensions
-gem 'spree_simple_sales', path: '../spree_simple_sales'
+gem 'spree_simple_sales', git: 'git@github.com:mPanasiewicz/spree_simple_sales.git', branch: 'master'
