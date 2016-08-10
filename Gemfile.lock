@@ -10,8 +10,10 @@ GIT
       routing-filter (~> 0.5.0)
       spree_core (~> 3.1.0.beta)
 
-PATH
-  remote: spree_simple_sales
+GIT
+  remote: git@github.com:mPanasiewicz/spree_simple_sales.git
+  revision: 880118771ca649a270e8ad2f06c3ab1b6dc4b1b9
+  branch: master
   specs:
     spree_simple_sales (3.1.0)
       spree_core (~> 3.1.0)
