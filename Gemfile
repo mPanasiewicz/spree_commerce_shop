@@ -57,4 +57,4 @@ gem 'spree_i18n', git: 'git://github.com/spree/spree_i18n.git', branch: '3-1-sta
 gem 'rails_12factor', group: :production
 
 # Custom extensions
-gem 'spree_simple_sales', path: '../spree_simple_sales'
+gem 'spree_simple_sales', git: 'git@github.com:mPanasiewicz/spree_simple_sales.git', branch: 'master'
