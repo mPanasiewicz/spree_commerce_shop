@@ -54,7 +54,7 @@ gem 'spree_auth_devise', '~> 3.1.0'
 gem 'spree_i18n', git: 'git://github.com/spree/spree_i18n.git', branch: '3-1-stable'
 
 #Heroku
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 # Custom extensions
 gem 'spree_simple_sales', path: '../spree_simple_sales'
