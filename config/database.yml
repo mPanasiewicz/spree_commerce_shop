@@ -27,17 +27,29 @@
 #Postgresql
 development:
   adapter: postgresql
+  encoding: utf-8
   database: spree_development
   pool: 5
   timeout: 5000
+  user: mpanasiewiczo
+  password:
+  port: 5432
 test:
   adapter: postgresql
+  encoding: utf-8
   database: spree_test
   pool: 5
   timeout: 5000
+  user: mpanasiewiczo
+  password:
+  port: 5432
 
 production:
   adapter: postgresql
+  encoding: utf-8
   database: spree_production
   pool: 5
   timeout: 5000
+  user: mpanasiewiczo
+  password:
+  port: 5432
