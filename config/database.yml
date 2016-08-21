@@ -43,9 +43,9 @@ test:
 production:
   adapter: postgresql
   encoding: utf-8
-  database: d2e5iertgmo341
-  user: nxiyjkgqnkujwq
-  password: 3y_utV5T7qQh38SoIoZ6TxgruX
+  database: <%= ENV["DATABASE"] %>
+  user: <%= ENV["DB_USER"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   pool: 5
   timeout: 5000
   port: 5432
