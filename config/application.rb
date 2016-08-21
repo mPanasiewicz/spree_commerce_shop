@@ -49,5 +49,31 @@ module Mystore
       authentication:       'plain',
       enable_starttls_auto: true
     }
+
+    #config/application.rb
+    config.exception_handler = {
+            db:     false, #-> defaults to :errors if true, else use :table_name
+            dev:    false,
+            email:  false, #-> need to integrate
+            social: {
+                :twitter    =>      'frontlineutils',
+                :facebook   =>      'frontline.utilities',
+                :linkedin   =>      'frontline-utilities',
+                :youtube    =>      'frontlineutils',
+                :fusion     =>      'frontlineutils',
+                :url => {
+                        :facebook   =>      'https://facebook.com',
+                        :twitter    =>      'http://twitter.com',
+                        :youtube    =>      'https://youtube.com/user',
+                        :linkedin   =>      'https://linkedin.com/company',
+                        :fusion     =>      'https://frontlinefusion.com',
+                    },
+            },
+            layouts: {
+                '400' => nil,
+                '500' => 'exception'
+            },
+    }
+
   end
 end
