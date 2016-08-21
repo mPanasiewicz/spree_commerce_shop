@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Mystore
   class Application < Rails::Application
-    
+
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
@@ -35,5 +35,19 @@ module Mystore
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # These settings are for the sending out email for active admin and consequently the   devise mailer
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.raise_delivery_errors = true
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address:              'smtp.gmail.com',
+      port:                 587,
+      domain:               'gmail.com',
+      user_name:            ENV['MAIL_USERNAME'],
+      password:             ENV['MAIL_PASSWORD'],
+      authentication:       'plain',
+      enable_starttls_auto: true
+    }
   end
 end

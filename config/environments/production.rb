@@ -76,4 +76,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.logger = true
+  config.action_mailer.default_url_options = { host: 'enigmatic-wildwood-81112.herokuapp.com' }
 end
