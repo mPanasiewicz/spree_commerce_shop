@@ -31,8 +31,6 @@ development:
   database: spree_development
   pool: 5
   timeout: 5000
-  user: mpanasiewiczo
-  password:
   port: 5432
 test:
   adapter: postgresql
@@ -40,16 +38,14 @@ test:
   database: spree_test
   pool: 5
   timeout: 5000
-  user: mpanasiewiczo
-  password:
   port: 5432
 
 production:
   adapter: postgresql
   encoding: utf-8
-  database: spree_production
+  database: d2e5iertgmo341
+  user: nxiyjkgqnkujwq
+  password: 3y_utV5T7qQh38SoIoZ6TxgruX
   pool: 5
   timeout: 5000
-  user: mpanasiewiczo
-  password:
   port: 5432
