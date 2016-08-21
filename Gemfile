@@ -58,3 +58,4 @@ gem 'rails_12factor', group: :production
 
 # Custom extensions
 gem 'spree_simple_sales', git: 'git@github.com:mPanasiewicz/spree_simple_sales.git', branch: 'master'
+# gem 'spree_simple_sales', path: '../spree_simple_sales'
