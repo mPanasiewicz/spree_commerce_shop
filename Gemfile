@@ -61,4 +61,6 @@ gem 'rails_12factor', group: :production
 
 # Custom extensions
 gem 'spree_simple_sales', github: 'mPanasiewicz/spree_simple_sales', branch: 'master'
+gem 'spree_related_products', github: 'spree-contrib/spree_related_products', branch: '3-1-stable'
+gem 'spree_braintree_vzero', github: 'spree-contrib/spree_braintree_vzero', branch: '3-1-stable'
 # gem 'spree_simple_sales', path: '../spree_simple_sales'
